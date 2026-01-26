@@ -1,7 +1,7 @@
 {
   "functions": {
     "app/api/inngest/route.js": {
-      "maxDuration": 600,
+      "maxDuration": 300,
       "memory": 1024
     },
     "pages/api/**/*.js": {
