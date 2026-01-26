@@ -1,8 +1,18 @@
 {
   "functions": {
+    "app/api/inngest/route.js": {
+      "maxDuration": 600,
+      "memory": 1024
+    },
     "pages/api/**/*.js": {
       "maxDuration": 60,
       "memory": 1024
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/api/inngest",
+      "destination": "/api/inngest/route"
+    }
+  ]
 }
