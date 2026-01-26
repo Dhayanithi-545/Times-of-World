@@ -1,5 +1,9 @@
-import {serve} from "inngest/next"
+import { serve } from "inngest/next"
 import { inngest } from "@/lib/inngest/client"
-import {functions} from "@/lib/inngest/functions/functions"
+import { functions } from "@/lib/inngest/functions/functions"
 
-export const {GET, POST, PUT} = serve({client: inngest, functions});
+export const { GET, POST, PUT } = serve({
+  client: inngest,
+  functions: functions,
+  streaming: "allow"  // Add this line for better compatibility
+})
