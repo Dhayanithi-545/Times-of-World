@@ -8,9 +8,8 @@ Times of World is a modern, AI-powered news aggregation and personalization plat
 - **Daily Digest** - Curated news summaries delivered to your inbox
 - **Breaking News Alerts** - Stay updated with real-time notifications
 - **Multi-Source Aggregation** - News from trusted sources worldwide in one place
-- **Dark/Light Mode** - Comfortable reading experience in any lighting condition
 - **Responsive Design** - Access your news on any device
-- **Video News** - Engaging video content alongside traditional articles
+
 
 ## 🚀 How It Works
 
@@ -21,13 +20,12 @@ Times of World is a modern, AI-powered news aggregation and personalization plat
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Next.js 14, React 18, TypeScript
-- **Styling**: Tailwind CSS with CSS Variables
+- **Frontend**: Next.js, React, TypeScript
+- **Backend**: Supabase, Inngest
+- **Styling**: Tailwind CSS, Shadcn UI
 - **State Management**: React Context + useReducer
 - **Animation**: Framer Motion
 - **Icons**: Lucide Icons
 - **Deployment**: Vercel
 - **Analytics**: Vercel Analytics
 
-Built with ❤️ by the Times of World team
-```
