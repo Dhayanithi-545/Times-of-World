@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Your App Name",
-  description: "Your app description",
+  title: "Times of World",
+  description: "Times of World is a modern, AI-powered news aggregation and personalization platform that delivers curated news content tailored to individual user preferences",
 };
 
 export default function RootLayout({

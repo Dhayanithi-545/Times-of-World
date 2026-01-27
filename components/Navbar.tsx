@@ -44,8 +44,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo with Globe Icon */}
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/50">
-              <Globe className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 bg-gradient-to-br from-black-500 to-white-600 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/50">
+              {/* <Globe className="w-6 h-6 text-white" /> */}
+              <img src="/icon.png" alt="Times of World" className="w-8 h-8" />
             </div>
             <h1 className="text-xl font-bold text-white" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
               Times of World

@@ -282,9 +282,9 @@ export default function LandingPage() {
       href="/"
       className="flex items-center gap-6 hover:opacity-80 transition-opacity"
     >
-      <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-        <Globe className="w-14 h-14 text-black" />
-      </div>
+      <div className="w-18 h-18  rounded-full flex items-center justify-center shadow-lg ">
+              <img src="/icon.png" alt="Times of World" className="w-18 h-18" />
+            </div>
 
       <h1
         className="text-5xl font-bold text-white leading-none"
