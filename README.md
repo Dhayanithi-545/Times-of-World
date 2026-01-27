@@ -29,36 +29,5 @@ Times of World is a modern, AI-powered news aggregation and personalization plat
 - **Deployment**: Vercel
 - **Analytics**: Vercel Analytics
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-
 Built with ❤️ by the Times of World team
 ```
-
-### Key Aspects of the Project:
-
-1. **Purpose**:
-   - AI-driven news aggregation platform
-   - Personalized content delivery
-   - Modern, responsive interface
-
-2. **User Benefits**:
-   - Saves time with curated news
-   - Reduces information overload
-   - Provides diverse perspectives
-   - Accessible across devices
-
-3. **Technical Highlights**:
-   - Built with Next.js for optimal performance
-   - Implements modern web technologies
-   - Follows best practices for web development
-
-4. **Future Potential**:
-   - Expand to mobile apps
-   - Add more personalization features
-   - Include more interactive elements
-   - Implement machine learning for better recommendations
-
-Would you like me to help you create any of the documentation files mentioned in the README, such as the API documentation or contribution guidelines?

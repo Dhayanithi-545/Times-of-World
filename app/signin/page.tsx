@@ -1,7 +1,7 @@
 "use client";
 
 import { createClient } from "@/lib/client";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 import { Eye, EyeOff, Mail, Lock, User, Globe } from "lucide-react";
 import WireframeDottedGlobe from "@/components/ui/wireframe-dotted-globe";
@@ -211,11 +211,17 @@ export default function SigninPage() {
 
     try {
       if (isSignUp) {
-        const { error } = await supabase.auth.signUp({ email, password });
+        const { error } = await supabase.auth.signUp({
+          email, 
+          password,
+          options: {
+            emailRedirectTo: process.env.NEXT_PUBLIC_SITE_URL + '/dashboard'// Make sure to use NEXT_PUBLIC_ prefix
+  }
+});
         if (error) throw error;
         setMessage("Check your email for the confirmation link!");
       } else {
-        const { error } = await supabase.auth.signInWithPassword({ email, password });
+        const { error } = await supabase.auth.signInWithPassword({ email, password});
         if (error) throw error;
         router.push('/dashboard');
       }
