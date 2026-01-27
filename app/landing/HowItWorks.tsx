@@ -26,7 +26,7 @@ export default function HowItWorksSection() {
     {
       number: '3',
       title: 'Stay Informed',
-      desc: 'Receive curated news updates tailored specifically for you, every day.',
+      desc: 'Receive curated news updates in your registered mail tailored specifically for you .',
       badge: 'Step Three',
       icon: Newspaper,
     },
