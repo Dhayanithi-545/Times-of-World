@@ -1,31 +1,66 @@
-# Times of World - AI-Powered News Platform
+# Times of World
 
-Times of World is a modern, AI-powered news aggregation and personalization platform that delivers curated news content tailored to individual user preferences. Built with Next.js and cutting-edge AI technologies, it provides a seamless, personalized news consumption experience.
+[https://timesofworld.vercel.app/](https://timesofworld.vercel.app/)
 
-## 🌟 Features
+Times of World is an AI-powered news aggregator that cuts through the noise to deliver fast, fair, and focused news briefings. By leveraging OpenAI for intelligent curation and summarization, it provides users with personalized daily digests directly to their inbox, ensuring they stay informed on what matters most without the clutter.
 
-- **AI-Powered Personalization** - Get news recommendations based on your interests and reading habits
-- **Daily Digest** - Curated news summaries delivered to your inbox
-- **Breaking News Alerts** - Stay updated with real-time notifications
-- **Multi-Source Aggregation** - News from trusted sources worldwide in one place
-- **Responsive Design** - Access your news on any device
+## Features
 
+- **AI-Curated Content**: Advanced algorithms select and summarize the most relevant stories from trusted global sources.
+- **Personalized Feed**: Content tailored to user-selected topics and reading preferences.
+- **Daily Briefings**: Automated, concise news digests delivered via email.
+- **Real-Time Updates**: Integration with NewsAPI ensures access to the latest breaking news.
 
-## 🚀 How It Works
+## Tech Stack
 
-1. **Sign Up** - Create your personalized account
-2. **Set Preferences** - Choose your topics of interest
-3. **Get Curated News** - Receive AI-powered news recommendations
-4. **Read & Interact** - Save articles, set alerts, and share with friends
-
-## 🛠️ Tech Stack
-
-- **Frontend**: Next.js, React, TypeScript
-- **Backend**: Supabase, Inngest
-- **Styling**: Tailwind CSS, Shadcn UI
-- **State Management**: React Context + useReducer
-- **Animation**: Framer Motion
-- **Icons**: Lucide Icons
+- **Frontend**: Next.js 16 (App Router), React 19, Tailwind CSS 4, Framer Motion
+- **Services**: Supabase (Auth & Database), Inngest (Background Jobs), EmailJS
+- **AI & Data**: OpenAI API, NewsAPI
 - **Deployment**: Vercel
-- **Analytics**: Vercel Analytics
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or pnpm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/times-of-world.git
+   cd times-of-world
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Set up environment variables:
+   Create a `.env.local` file in the root directory and add the following keys:
+
+   ```env
+   # Supabase
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+   # OpenAI
+   OPENAI_API_KEY=your_openai_api_key
+   # OPEAI_BASE_URL= (Optional)
+
+   # NewsAPI
+   NEWS_API_KEY=your_newsapi_key
+
+   # EmailJS
+   EMAILJS_SERVICE_ID=your_service_id
+   EMAILJS_TEMPLATE_ID=your_template_id
+   EMAILJS_PUBLIC_KEY=your_public_key
+   EMAILJS_PRIVATE_KEY=your_private_key
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
